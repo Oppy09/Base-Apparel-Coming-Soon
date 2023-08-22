@@ -14,7 +14,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    /* gap: 8rem; */
 }
 div.container {
     display: grid;
@@ -53,7 +52,7 @@ p.details {
     width: 48ch;
     line-height: 1.7;
 }
-span:nth-child(3) {
+#reg {
     display: flex;
     width: 26rem;
     position: relative;
@@ -68,15 +67,6 @@ input {
 input:hover {
     border: 2px solid hsl(0, 74%, 74%);
 }
-/* span:nth-child(3)::after {
-    content: "Please provide a valid email";
-    color: hsl(0, 74%, 74%);
-    display: block;
-    position: absolute;
-    bottom: -1.5rem;
-    left: 1.5rem;
-    visibility: hidden;
-} */
 p.err-message {
     color: hsl(0, 74%, 74%);
     margin: .5rem 1.5rem;
@@ -85,19 +75,19 @@ p.err-message {
     color: hsl(0, 80%, 86%);
     font-family: 'Josefin Sans', sans-serif;
 }
-span img.button {
+#reg img.button {
     padding: .75em 2em;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border-radius: 20px;
     position: absolute;
     right: 0;
 }
-span img.error {
+#reg img.error {
     position: absolute;
     right: 5.5rem;
     bottom: .75rem;
 }
-span img.button:hover {
+#reg img.button:hover {
     background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
     box-shadow: 0 10px 10px hsl(0, 80%, 86%);
     cursor: pointer;

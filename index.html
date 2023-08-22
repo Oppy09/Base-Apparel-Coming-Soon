@@ -21,18 +21,19 @@
         </header>
         <p class="details">Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <span id="reg">
+        <form id="reg" method="post">
           <input type="email" name="email" id="email" placeholder="Email Address">
           <img class="error hide" src="./images/icon-error.svg" alt="error-icon">
           <img class="button" src="./images/icon-arrow.svg" alt="arrow-icon">
-        </span>
+        </form>
         <p class="err-message hide">Please provide a valid email</p>
       </div>
     </div>
     <div class="illustration">
-      <figure>
-        <img src="./images/hero-desktop.jpg" alt="model-img">
-      </figure>
+      <picture>
+        <source media="(max-width: 600px)" srcset="./images/hero-mobile.jpg">
+        <img src="./images/hero-desktop.jpg" alt="hero">
+      </picture>
     </div>
   </div>  
   <footer>
